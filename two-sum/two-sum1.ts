@@ -1,3 +1,5 @@
+// complexity: O(n^2)
+
 function twoSum(nums: number[], target: number): number[] {
     let currIndex = 0;
     while (currIndex < nums.length) {
@@ -7,7 +9,7 @@ function twoSum(nums: number[], target: number): number[] {
                     return [numsIndex, currIndex].sort();
                 }
             }
-            
+
             if (numsIndex === nums.length - 1) {
                 currIndex++;
             }
